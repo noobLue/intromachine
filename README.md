@@ -1,6 +1,8 @@
 # intromachine
 Intro to machine learning term project
 
+*Note: Some of this readme is outdated as of 12th of December*
+
 
 ## Install requirements:
 
@@ -100,3 +102,5 @@ Class 4:
 ## TODO
 
 Currently classifiers for class2 and class4 are separate, possibly leading to inconsistencies like class2 is predicted to be *event*, but class4 is predicted to be *non-event*. Possible answers? First predict event vs non-event and then predict which event the event should be.
+
+- Answered by prioritizing the binary classifier. If the binary classifier chooses "event" then for the multiclass-classifier we pick the event with the highest probability (non-event excluded). If the binary classifier says "nonevent" then we respond "nonevent" for the multiclass question as well. 
